@@ -7,7 +7,7 @@
 if exists("g:loaded_jinja")
   finish
 endif
-g:loaded_jinja = 1
+let g:loaded_jinja = 1
 
 function jinja#CheckJinja()
   let n = 1
