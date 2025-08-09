@@ -21,3 +21,12 @@ function! jinja#Syntax()
     runtime! syntax/jinja.vim
 
 endfunction
+
+function! jinja#Indent()
+    runtime! indent/jinja.vim
+    if exists('*GetDjangoIndent')
+      setlocal indentexpr=GetDjangoIndent()
+      setlocal indentkeys=o,O,*<Return>,{,},o,O,!^F,<>>
+    endif
+
+endfunction
