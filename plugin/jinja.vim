@@ -1,9 +1,9 @@
-# Vim jinja plugin for syntax and indent support
-# Last Change: 09 augest 2025
-# Maintainer: Abdlekader Lahmar <lahmarabdelkader2006@gmail.com>
-# License: MIT License
+" Vim jinja plugin for syntax and indent support
+" Last Change: 09 augest 2025
+" Maintainer: Abdlekader Lahmar <lahmarabdelkader2006@gmail.com>
+" License: MIT License
 
-# stop plugin from loading twice and allow the user to disable loading the plugin
+" stop plugin from loading twice and allow the user to disable loading the plugin
 if exists("g:loaded_jinja")
   finish
 endif
