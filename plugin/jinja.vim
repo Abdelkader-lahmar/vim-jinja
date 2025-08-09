@@ -1,5 +1,3 @@
-vim9script noclear
-
 # Vim jinja plugin for syntax and indent support
 # Last Change: 09 augest 2025
 # Maintainer: Abdlekader Lahmar <lahmarabdelkader2006@gmail.com>
