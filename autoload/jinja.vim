@@ -71,6 +71,14 @@ endfunction
 
 function! jinja#Indent()
     " Function to triger the indentation
+    if &l:indentexpr == ''
+        if &l:cindent
+            let &l:indentexpr = 'cindent(v:lnum)'
+        else
+            let &l:indentexpr = 'indent(prevnonblank(v:lnum-1))'
+        endif
+    endif
+
     setlocal indentexpr=GetDjangoIndent()
     setlocal indentkeys=o,O,*<Return>,{,},o,O,!^F,<>>
 
