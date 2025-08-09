@@ -10,7 +10,6 @@ endif
 
 " Use HTML formatting rules.
 setl indentkeys=o,O,<Return>,<>>,!^F
-runtime! indent/html.vim		 +setl nosmartindent
 let b:did_indent = 1
 
 " Indent within the jinja tags
