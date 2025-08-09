@@ -23,7 +23,6 @@ endfunction
 
 function jinja#Start()
   call jinja#Syntax()
-  call jinja#Indent()
 endfunction
 
 autocmd BufNewFile,BufRead *.html,*.htm call jinja#CheckJinja()
