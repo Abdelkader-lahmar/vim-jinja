@@ -25,4 +25,6 @@ endfunction
 function! jinja#Indent()
     " Function to triger the indentation
     runtime! indent/jinja.vim
+    setlocal indentexpr=GetDjangoIndent()
+    setlocal indentkeys=o,O,*<Return>,{,},o,O,!^F,<>>
 endfunction

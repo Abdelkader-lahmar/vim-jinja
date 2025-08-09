@@ -26,9 +26,6 @@ let b:html_indentexpr = &l:indentexpr
 
 let b:did_indent = 1
 
-setlocal indentexpr=GetDjangoIndent()
-setlocal indentkeys=o,O,*<Return>,{,},o,O,!^F,<>>
-
 " Only define the function once.
 if exists("*GetDjangoIndent")
     finish
