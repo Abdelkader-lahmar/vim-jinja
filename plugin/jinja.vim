@@ -11,7 +11,7 @@ if exists("g:loaded_jinja")
 endif
 g:loaded_typecorrect = 1
 
-function! CheckJinja()
+function CheckJinja()
   let n = 1
   while n < 50 && n <= line("$")
     " check for jinja
@@ -23,7 +23,7 @@ function! CheckJinja()
   endwhile
 endfunction
 
-function! jinja#Start()
+function jinja#Start()
   call jinja#Syntax()
   call jinja#Indent()
 endfunction
