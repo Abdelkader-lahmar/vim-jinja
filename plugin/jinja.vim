@@ -11,7 +11,7 @@ if exists("g:loaded_jinja")
 endif
 g:loaded_typecorrect = 1
 
-function CheckJinja()
+function jinja#CheckJinja()
   let n = 1
   while n < 50 && n <= line("$")
     " check for jinja
@@ -28,5 +28,5 @@ function jinja#Start()
   call jinja#Indent()
 endfunction
 
-autocmd BufNewFile,BufRead *.html,*.htm call CheckJinja()
+autocmd BufNewFile,BufRead *.html,*.htm call jinja#CheckJinja()
 autocmd BufNewFile,BufRead *.jinja2,*.j2,*.jinja,*.nunjucks,*.nunjs,*.njk call jinja#Start()
